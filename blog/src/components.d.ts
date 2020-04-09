@@ -7,18 +7,9 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FooterLarissa {
-        /**
-          * The last name
-         */
-        "drei": string;
-        /**
-          * The first name
-         */
-        "eins": string;
-        /**
-          * The middle name
-         */
-        "zwei": string;
+        "dritter": string;
+        "erster": string;
+        "zweiter": string;
     }
     interface MyComponent {
         /**
@@ -55,18 +46,9 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FooterLarissa {
-        /**
-          * The last name
-         */
-        "drei"?: string;
-        /**
-          * The first name
-         */
-        "eins"?: string;
-        /**
-          * The middle name
-         */
-        "zwei"?: string;
+        "dritter"?: string;
+        "erster"?: string;
+        "zweiter"?: string;
     }
     interface MyComponent {
         /**

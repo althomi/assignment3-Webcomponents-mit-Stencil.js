@@ -7,26 +7,19 @@ import { format } from '../../utils/utils';
   shadow: true
 })
 export class FooterLarissa {
-  /**
-   * The first name
-   */
-  @Prop() eins: string;
-
-  /**
-   * The middle name
-   */
-  @Prop() zwei: string;
-
-  /**
-   * The last name
-   */
-  @Prop() drei: string;
-
-  private getText(): string {
-    return format(this.eins, this.zwei, this.drei);
+@Prop() erster: string;
+@Prop() zweiter: string;
+@Prop() dritter: string;
+  
+private linksAnzeigen(): string {
+    return format(this.erster, this.zweiter, this.dritter);
   }
-
   render() {
-    return <div>Hallo, ich bin's {this.getText()}</div>;
+    return (
+        <div class="footer-larissa">
+        <hr id="trennlinie"></hr>
+        <span class="link">{this.linksAnzeigen()}</span>
+        </div>
+    );
   }
 }
