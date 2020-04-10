@@ -12,6 +12,10 @@
     margin-block-start: 0;
 }
 
+a{
+    color: red;
+}
+
 .footer-link{
     color: #505050;
     font-size: 1.3em;

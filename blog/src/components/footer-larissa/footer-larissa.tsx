@@ -1,5 +1,4 @@
 import { Component, Prop, h } from '@stencil/core';
-import {FooterLink} from '../footer-link/footer-link';
 
 @Component({
   tag: 'footer-larissa',
@@ -7,21 +6,21 @@ import {FooterLink} from '../footer-link/footer-link';
   shadow: true
 })
 export class FooterLarissa {
-@Prop() erster: string;
+@Prop() erster!: string;
 @Prop() zweiter: string;
 @Prop() dritter: string;
-@Prop() link1: string;
-@Prop() link2: string;
-@Prop() link3: string;
+@Prop() ersterlink!: string;
+@Prop() zweiterlink: string;
+@Prop() dritterlink: string;
 
   render() {
     return (
         <div class="footer-larissa">
         <hr id="trennlinie"></hr>
         <ul id="footer-liste">
-        <li><FooterLink link={this.link1} text={this.erster}/></li>
-        <li><FooterLink link= {this.link2} text={this.zweiter}/></li>
-        <li><FooterLink link= {this.link3} text={this.dritter}/></li>
+        <li class="footer-link"><a href={this.ersterlink}>{this.erster}</a></li>
+        <li class="footer-link"><a href={this.zweiterlink}>{this.zweiter}</a></li>
+        <li class="footer-link"><a href={this.dritterlink}>{this.dritter}</a></li>
         </ul>
         </div>
     );

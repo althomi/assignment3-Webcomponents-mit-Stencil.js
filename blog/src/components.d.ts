@@ -8,11 +8,11 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface FooterLarissa {
         "dritter": string;
+        "dritterlink": string;
         "erster": string;
-        "link1": string;
-        "link2": string;
-        "link3": string;
+        "ersterlink": string;
         "zweiter": string;
+        "zweiterlink": string;
     }
     interface MyComponent {
         /**
@@ -50,11 +50,11 @@ declare global {
 declare namespace LocalJSX {
     interface FooterLarissa {
         "dritter"?: string;
-        "erster"?: string;
-        "link1"?: string;
-        "link2"?: string;
-        "link3"?: string;
+        "dritterlink"?: string;
+        "erster": string;
+        "ersterlink": string;
         "zweiter"?: string;
+        "zweiterlink"?: string;
     }
     interface MyComponent {
         /**

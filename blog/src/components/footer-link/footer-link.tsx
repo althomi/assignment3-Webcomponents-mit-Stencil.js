@@ -1,10 +1,10 @@
-import {FunctionalComponent, h} from '@Stencil/core';
+import { FunctionalComponent, h} from '@Stencil/core';
 
 interface FooterLinkProps{
-    text: any;
+    text: string;
     link: any;
 }
 
 export const FooterLink: FunctionalComponent <FooterLinkProps> = ({link, text}) => (
-<a href={link}>{text}</a>
+<a href={link}> {text}</a>
 );
