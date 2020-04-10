@@ -1,14 +1,25 @@
 .footer-larissa{
     width: 100%;
     height: 100%;
-}
-
-.link{
-    color: blue;
-    display: block;
+    font-family: 'Oswald', sans-serif;
 }
 
 #trennlinie{
-    color: rebeccapurple;
+    border-width: 2%;
+    border-radius: 1px;
+    border-color: #505050;
+    border-style: solid;
+    margin-block-start: 0;
+}
 
+.footer-link{
+    color: #505050;
+    font-size: 1.3em;
+    display: block;
+    display: inline;
+    padding: 1%;
+}
+
+#footer-liste{
+    list-style: none;
 }

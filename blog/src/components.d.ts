@@ -9,6 +9,9 @@ export namespace Components {
     interface FooterLarissa {
         "dritter": string;
         "erster": string;
+        "link1": string;
+        "link2": string;
+        "link3": string;
         "zweiter": string;
     }
     interface MyComponent {
@@ -48,6 +51,9 @@ declare namespace LocalJSX {
     interface FooterLarissa {
         "dritter"?: string;
         "erster"?: string;
+        "link1"?: string;
+        "link2"?: string;
+        "link3"?: string;
         "zweiter"?: string;
     }
     interface MyComponent {

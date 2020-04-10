@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
+import {FooterLink} from '../footer-link/footer-link';
 
 @Component({
   tag: 'footer-larissa',
@@ -10,15 +10,19 @@ export class FooterLarissa {
 @Prop() erster: string;
 @Prop() zweiter: string;
 @Prop() dritter: string;
-  
-private linksAnzeigen(): string {
-    return format(this.erster, this.zweiter, this.dritter);
-  }
+@Prop() link1: string;
+@Prop() link2: string;
+@Prop() link3: string;
+
   render() {
     return (
         <div class="footer-larissa">
         <hr id="trennlinie"></hr>
-        <span class="link">{this.linksAnzeigen()}</span>
+        <ul id="footer-liste">
+        <li><FooterLink link={this.link1} text={this.erster}/></li>
+        <li><FooterLink link= {this.link2} text={this.zweiter}/></li>
+        <li><FooterLink link= {this.link3} text={this.dritter}/></li>
+        </ul>
         </div>
     );
   }
