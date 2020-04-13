@@ -1,31 +1,70 @@
-p.rot{
-    color: green;
-    display: block;
-}
-
-.searchbar{
-    border-color: greenyellow;
-}
-
-.lupe-button{
-    border: none;
-    display: block;
-}
-
-.lupe-click{
-    background-color: hotpink;
+.suchleiste-allgemein{
+    width: 15%;
+    margin: auto;
 }
 
 .lupe-standart{
-    width: 5%;
+    width: 100%;
     display: block;
 }
 
-.lupe-bloed{
-    width: 50%;
+.activated-lupe{
+    width: 10%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
     display: block;
 }
 
-.change{
-    background-color: hotpink;
+.schliessen-standart{
+    width: 82%;
+    padding-left: 100%;
+    display: block;
+}
+
+.activated-schliessen{
+    width: 10%;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.eingabefeld{
+    display: flex;
+}
+
+.activated-searchbar{
+    height: 50%;
+    width: auto;
+    display: relative;
+}
+
+input{
+    width: 100%;
+    border: none;
+	color: #505050;  
+	text-align: left;
+	cursor: pointer;
+    width: 100%;        
+    outline:0;
+}
+
+input:hover{
+    border: none;
+    color: #505050;  
+}
+
+#Vögel{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.inactive{
+    display: none;
 }

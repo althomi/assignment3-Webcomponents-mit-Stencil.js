@@ -29,7 +29,6 @@ export namespace Components {
         "middle": string;
     }
     interface SearchmaskLarissa {
-        "acctivated": boolean;
     }
 }
 declare global {
@@ -81,7 +80,9 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface SearchmaskLarissa {
-        "acctivated"?: boolean;
+        "onOnSchliessen"?: (event: CustomEvent<any>) => void;
+        "onOnSearchbar"?: (event: CustomEvent<any>) => void;
+        "onOnToggle"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
         "footer-larissa": FooterLarissa;
