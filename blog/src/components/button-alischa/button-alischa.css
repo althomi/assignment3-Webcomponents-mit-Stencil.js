@@ -1,0 +1,15 @@
+.button-alischa{
+  border-style: solid;
+  border-color: #505050;
+  border-width: 2px;
+  background-color: white;
+  color: #505050;
+  width: 70px;
+  height: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  border-radius: 25%;
+  position: absolute;
+  left: 75%;
+  top: 10px;
+}

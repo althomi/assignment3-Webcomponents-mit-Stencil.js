@@ -6,6 +6,9 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ButtonAlischa {
+        "first": string;
+    }
     interface FooterLarissa {
         "dritter": string;
         "dritterlink": string;
@@ -32,6 +35,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLButtonAlischaElement extends Components.ButtonAlischa, HTMLStencilElement {
+    }
+    var HTMLButtonAlischaElement: {
+        prototype: HTMLButtonAlischaElement;
+        new (): HTMLButtonAlischaElement;
+    };
     interface HTMLFooterLarissaElement extends Components.FooterLarissa, HTMLStencilElement {
     }
     var HTMLFooterLarissaElement: {
@@ -51,12 +60,16 @@ declare global {
         new (): HTMLSearchmaskLarissaElement;
     };
     interface HTMLElementTagNameMap {
+        "button-alischa": HTMLButtonAlischaElement;
         "footer-larissa": HTMLFooterLarissaElement;
         "my-component": HTMLMyComponentElement;
         "searchmask-larissa": HTMLSearchmaskLarissaElement;
     }
 }
 declare namespace LocalJSX {
+    interface ButtonAlischa {
+        "first"?: string;
+    }
     interface FooterLarissa {
         "dritter"?: string;
         "dritterlink"?: string;
@@ -85,6 +98,7 @@ declare namespace LocalJSX {
         "onOnToggle"?: (event: CustomEvent<any>) => void;
     }
     interface IntrinsicElements {
+        "button-alischa": ButtonAlischa;
         "footer-larissa": FooterLarissa;
         "my-component": MyComponent;
         "searchmask-larissa": SearchmaskLarissa;
@@ -94,6 +108,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "button-alischa": LocalJSX.ButtonAlischa & JSXBase.HTMLAttributes<HTMLButtonAlischaElement>;
             "footer-larissa": LocalJSX.FooterLarissa & JSXBase.HTMLAttributes<HTMLFooterLarissaElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "searchmask-larissa": LocalJSX.SearchmaskLarissa & JSXBase.HTMLAttributes<HTMLSearchmaskLarissaElement>;
