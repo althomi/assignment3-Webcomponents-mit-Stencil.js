@@ -1,15 +1,19 @@
-.button-alischa{
+button{
   border-style: solid;
   border-color: #505050;
-  border-width: 2px;
+  border-width: 1px;
+  border-radius: 10px;
   background-color: white;
-  color: #505050;
-  width: 70px;
+  width: 60px;
   height: 30px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 12px;
-  border-radius: 25%;
   position: absolute;
   left: 75%;
   top: 10px;
+}
+
+.link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  color: #505050;
+  text-decoration: none;
 }

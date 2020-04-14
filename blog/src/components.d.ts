@@ -7,7 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface ButtonAlischa {
-        "first": string;
+        "event": UIEvent;
+        "link": string;
     }
     interface FooterLarissa {
         "dritter": string;
@@ -68,7 +69,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ButtonAlischa {
-        "first"?: string;
+        "event"?: UIEvent;
+        "link"?: string;
     }
     interface FooterLarissa {
         "dritter"?: string;
