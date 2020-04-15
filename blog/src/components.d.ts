@@ -10,6 +10,10 @@ export namespace Components {
         "event": UIEvent;
         "link": string;
     }
+    interface ButtonkundenkontoAlischa {
+        "event": UIEvent;
+        "link": string;
+    }
     interface FooterLarissa {
         "dritter": string;
         "dritterlink": string;
@@ -17,6 +21,9 @@ export namespace Components {
         "ersterlink": string;
         "zweiter": string;
         "zweiterlink": string;
+    }
+    interface LoginAlischa {
+        "boxueberschrift": string;
     }
     interface MyComponent {
         /**
@@ -42,11 +49,23 @@ declare global {
         prototype: HTMLButtonAlischaElement;
         new (): HTMLButtonAlischaElement;
     };
+    interface HTMLButtonkundenkontoAlischaElement extends Components.ButtonkundenkontoAlischa, HTMLStencilElement {
+    }
+    var HTMLButtonkundenkontoAlischaElement: {
+        prototype: HTMLButtonkundenkontoAlischaElement;
+        new (): HTMLButtonkundenkontoAlischaElement;
+    };
     interface HTMLFooterLarissaElement extends Components.FooterLarissa, HTMLStencilElement {
     }
     var HTMLFooterLarissaElement: {
         prototype: HTMLFooterLarissaElement;
         new (): HTMLFooterLarissaElement;
+    };
+    interface HTMLLoginAlischaElement extends Components.LoginAlischa, HTMLStencilElement {
+    }
+    var HTMLLoginAlischaElement: {
+        prototype: HTMLLoginAlischaElement;
+        new (): HTMLLoginAlischaElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -62,13 +81,19 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "button-alischa": HTMLButtonAlischaElement;
+        "buttonkundenkonto-alischa": HTMLButtonkundenkontoAlischaElement;
         "footer-larissa": HTMLFooterLarissaElement;
+        "login-alischa": HTMLLoginAlischaElement;
         "my-component": HTMLMyComponentElement;
         "searchmask-larissa": HTMLSearchmaskLarissaElement;
     }
 }
 declare namespace LocalJSX {
     interface ButtonAlischa {
+        "event"?: UIEvent;
+        "link"?: string;
+    }
+    interface ButtonkundenkontoAlischa {
         "event"?: UIEvent;
         "link"?: string;
     }
@@ -79,6 +104,9 @@ declare namespace LocalJSX {
         "ersterlink": string;
         "zweiter"?: string;
         "zweiterlink"?: string;
+    }
+    interface LoginAlischa {
+        "boxueberschrift"?: string;
     }
     interface MyComponent {
         /**
@@ -101,7 +129,9 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "button-alischa": ButtonAlischa;
+        "buttonkundenkonto-alischa": ButtonkundenkontoAlischa;
         "footer-larissa": FooterLarissa;
+        "login-alischa": LoginAlischa;
         "my-component": MyComponent;
         "searchmask-larissa": SearchmaskLarissa;
     }
@@ -111,7 +141,9 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "button-alischa": LocalJSX.ButtonAlischa & JSXBase.HTMLAttributes<HTMLButtonAlischaElement>;
+            "buttonkundenkonto-alischa": LocalJSX.ButtonkundenkontoAlischa & JSXBase.HTMLAttributes<HTMLButtonkundenkontoAlischaElement>;
             "footer-larissa": LocalJSX.FooterLarissa & JSXBase.HTMLAttributes<HTMLFooterLarissaElement>;
+            "login-alischa": LocalJSX.LoginAlischa & JSXBase.HTMLAttributes<HTMLLoginAlischaElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "searchmask-larissa": LocalJSX.SearchmaskLarissa & JSXBase.HTMLAttributes<HTMLSearchmaskLarissaElement>;
         }
