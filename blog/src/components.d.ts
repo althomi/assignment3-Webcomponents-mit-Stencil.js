@@ -14,6 +14,15 @@ export namespace Components {
         "zweiter": string;
         "zweiterlink": string;
     }
+    interface HeaderKatharina {
+        "logo": "default_logo.png";
+        "search": HTMLBodyElement;
+        "textfive": string;
+        "textfour": string;
+        "textone": string;
+        "textthree": string;
+        "texttwo": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -38,6 +47,12 @@ declare global {
         prototype: HTMLFooterLarissaElement;
         new (): HTMLFooterLarissaElement;
     };
+    interface HTMLHeaderKatharinaElement extends Components.HeaderKatharina, HTMLStencilElement {
+    }
+    var HTMLHeaderKatharinaElement: {
+        prototype: HTMLHeaderKatharinaElement;
+        new (): HTMLHeaderKatharinaElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -52,6 +67,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "footer-larissa": HTMLFooterLarissaElement;
+        "header-katharina": HTMLHeaderKatharinaElement;
         "my-component": HTMLMyComponentElement;
         "searchmask-larissa": HTMLSearchmaskLarissaElement;
     }
@@ -64,6 +80,15 @@ declare namespace LocalJSX {
         "ersterlink": string;
         "zweiter"?: string;
         "zweiterlink"?: string;
+    }
+    interface HeaderKatharina {
+        "logo"?: "default_logo.png";
+        "search"?: HTMLBodyElement;
+        "textfive"?: string;
+        "textfour"?: string;
+        "textone"?: string;
+        "textthree"?: string;
+        "texttwo"?: string;
     }
     interface MyComponent {
         /**
@@ -86,6 +111,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "footer-larissa": FooterLarissa;
+        "header-katharina": HeaderKatharina;
         "my-component": MyComponent;
         "searchmask-larissa": SearchmaskLarissa;
     }
@@ -95,6 +121,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "footer-larissa": LocalJSX.FooterLarissa & JSXBase.HTMLAttributes<HTMLFooterLarissaElement>;
+            "header-katharina": LocalJSX.HeaderKatharina & JSXBase.HTMLAttributes<HTMLHeaderKatharinaElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "searchmask-larissa": LocalJSX.SearchmaskLarissa & JSXBase.HTMLAttributes<HTMLSearchmaskLarissaElement>;
         }

@@ -1,0 +1,51 @@
+header-katharina {
+    font-family: 'Arial',sans-serif;
+    background: grey;
+} 
+
+.wrapper{
+    width: 75%;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+}
+
+.links {
+    float: right;
+    list-style: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+li {
+    display: inline;
+    padding: 6px 10px;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;  
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.header {
+    height: 45px;
+    background-color:white;
+}
+
+.border{
+    width: auto;
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: #505050;
+    border-style: solid;
+
+}
