@@ -3,21 +3,36 @@ header-katharina {
     background: grey;
 } 
 
-.wrapper{
+/* .wrapper{
     width: 75%;
     margin: auto;
-}
+} */
 
 .logo {
     float: left;
 }
 
-.links {
+.logo-image {
+    width: 3em;
+}
+
+.burger-icon {
+    width: 3em;
     float: right;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+
+}
+
+.links {
     list-style: none;
     background-color: white;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 li {
@@ -41,7 +56,7 @@ a:hover{
     margin: auto;
     font-family: 'Oswald', sans-serif;
     position: absolute;
-    top: 2.5%;
+    top: 10px;
     left: 12.5%;
     border-bottom-width: 1.3px;
     border-bottom-left-radius: 1px;
@@ -50,38 +65,50 @@ a:hover{
     border-bottom-style: solid;
 }
 
-/* .border{
-    width: auto;
-    border-width: 1px;
-    border-radius: 1px;
-    border-color: #505050;
-    border-style: solid;
+.burger-links{
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
 
-} */
-
-#burger-links{
-    display: none;
+.burger-links>a{
+    line-height: 3;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .burger-wrapper {
- float: right;
- display: none;
+    float: right;
+    display: none;
 }
 
-/* .line {
+.menu{
+    position: relative;
     float: right;
-    width: 30px;
-    height: 4px;
-    background-color: black;
-    margin: 2px 0;
-    display: none;
-  } */
+    width: 100px;
+    right: 13px;
+    background-color: white;
+    margin-top: 86px;
+    border-width: 1.3px;
+    border-radius: 3px;
+    border-color: #505050;
+    border-style: solid;
+    border-top-width: 1.3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0px;
+    border-top-color: white;
+    border-top-style: solid;
+}
 
+button{
+    border: none;
+    background: transparent;
+}
 
 @media screen and (max-width: 750px) {
     .logo {
         width: 22%;
-        padding: 0% 30% 8% 0%;
     }
 }
 
@@ -94,5 +121,19 @@ a:hover{
 @media screen and (max-width: 750px) {
     .burger-wrapper {
        display: block;
+       padding-right: 2%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .menu {
+       display:none;
     }
 }
