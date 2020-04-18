@@ -37,15 +37,62 @@ a:hover{
 }
 
 .header {
-    height: 45px;
-    background-color:white;
+    width: 75%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 2.5%;
+    left: 12.5%;
+    border-bottom-width: 1.3px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-color: #505050;
+    border-bottom-style: solid;
 }
 
-.border{
+/* .border{
     width: auto;
     border-width: 1px;
     border-radius: 1px;
     border-color: #505050;
     border-style: solid;
 
+} */
+
+#burger-links{
+    display: none;
+}
+
+.burger-wrapper {
+ float: right;
+ display: none;
+}
+
+/* .line {
+    float: right;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 2px 0;
+    display: none;
+  } */
+
+
+@media screen and (max-width: 750px) {
+    .logo {
+        width: 22%;
+        padding: 0% 30% 8% 0%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    ul.links {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .burger-wrapper {
+       display: block;
+    }
 }

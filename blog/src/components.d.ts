@@ -15,6 +15,7 @@ export namespace Components {
         "zweiterlink": string;
     }
     interface HeaderKatharina {
+        "burger": "Hamburger_icon.png";
         "logo": "default_logo.png";
         "search": HTMLBodyElement;
         "textfive": string;
@@ -82,6 +83,7 @@ declare namespace LocalJSX {
         "zweiterlink"?: string;
     }
     interface HeaderKatharina {
+        "burger"?: "Hamburger_icon.png";
         "logo"?: "default_logo.png";
         "search"?: HTMLBodyElement;
         "textfive"?: string;
