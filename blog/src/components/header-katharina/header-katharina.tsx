@@ -21,7 +21,7 @@ export class HeaderKatharina {
             <div class="wrapper">
                 <div class="header">
                     <ul class="logo">
-                        <li><a href="#" class="logo"><img src={getAssetPath(`./assets/${this.logo}`)} alt="Logo" /></a></li>
+                        <li><a href="#" class="logo"><img src={getAssetPath(`../assets/${this.logo}`)} alt="Logo" /></a></li>
                     </ul>
                     <ul class="links">
                         <li><a href="#">{this.textone}</a></li>
@@ -41,7 +41,7 @@ export class HeaderKatharina {
                     </div>
 
                     <div class='burger-wrapper'>
-                        <img src={getAssetPath(`./assets/${this.burger}`)} alt="Menu" />
+                        <img src={getAssetPath(`../assets/${this.burger}`)} alt="Menu" />
                     </div>
 
                     <div class="border"></div>
