@@ -46,22 +46,39 @@ export class HeaderKatharina {
         return (
             <div class="wrapper">
                 <div class="header">
-                    <ul class="logo">
-                        <li><a href="#" class="logo"><img class='logo-image' src='/assets/twitter.png' alt="Logo" /></a></li>
-                    </ul>
-                    <ul class="links">
-                        <li><a href="#">{this.textone}</a></li>
-                        <li><a href="#">{this.texttwo}</a></li>
-                        <li><a href="#">{this.textthree}</a></li>
-                        <li><a href="#">{this.textfour}</a></li>
-                        <li><a href="#">{this.textfive}</a></li>
-                    </ul>
-
-                    <ul class='burger-wrapper'>
-                        <li><button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}><img class='burger-icon' src='/assets/facebook.png' alt="Menu" /></button></li>
-                    </ul>
                     
-                    <div class="border"></div>
+                    {/* <a href="#" class="logo"><img class='logo-image' src='/assets/twitter.png' alt="Logo" /></a> */}
+                    
+                    {/* <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}><img class='burger-icon' src='/assets/facebook.png' alt="Menu" /></button> */}
+                    
+                    <ul class="header-bar">
+                        <li class="left">
+                                    <a href="#" class="logo">
+                                        <img class='logo-image' src='/assets/twitter.png' alt="Logo" />
+                                    </a>
+                        </li>
+                        <li class="right">
+                        <ul class="right burgermenu"> 
+                                <li> <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}>
+                                    <img class='burger-icon' src='/assets/facebook.png' alt="Menu" />
+                                    </button>
+                                </li>
+                            </ul>
+                            <ul class="hrefs">
+                                <li><a href="#">{this.textone}</a></li>
+                                <li><a href="#">{this.texttwo}</a></li>
+                                <li><a href="#">{this.textthree}</a></li>
+                                <li><a href="#">{this.textfour}</a></li>
+                                <li><a href="#">{this.textfive}</a></li>
+                            </ul>
+                            {/* <ul class="right burgermenu"> 
+                                <li> <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}>
+                                    <img class='burger-icon' src='/assets/facebook.png' alt="Menu" />
+                                    </button>
+                                </li>
+                            </ul> */}
+                        </li>
+                    </ul>
                 </div>
                 {options}
             </div>

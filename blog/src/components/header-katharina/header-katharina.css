@@ -1,45 +1,57 @@
-header-katharina {
-    font-family: 'Arial',sans-serif;
-    background: grey;
-} 
-
-/* .wrapper{
-    width: 75%;
-    margin: auto;
-} */
-
-.logo {
-    float: left;
+.logo{
+    margin: 0;
 }
 
 .logo-image {
     width: 3em;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .burger-icon {
     width: 3em;
-    float: right;
-    /* position: absolute;
-    bottom: 0;
-    right: 0; */
-
+    right: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-right: 22px;
 }
 
-.links {
+.burgerBtn{
+    float: right;
+    display: none;
+}
+
+.hrefs {
+    text-align: right;
     list-style: none;
     background-color: white;
     text-transform: uppercase;
     font-size: 20px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    padding: 0;
 }
 
-li {
+.left{
+    text-align: left;
+    float: left;
+}
+
+.right{
+    text-align: right;
+    
+}
+
+.right li {
     display: inline;
     padding: 6px 10px;
 
     
+}
+.header-bar{
+    padding:0;
+}
+
+.header-bar>li {
+    display: inline;
 }
 
 a{
@@ -55,7 +67,6 @@ a:hover{
     width: 75%;
     margin: auto;
     font-family: 'Oswald', sans-serif;
-    position: absolute;
     top: 10px;
     left: 12.5%;
     border-bottom-width: 1.3px;
@@ -65,7 +76,9 @@ a:hover{
     border-bottom-style: solid;
 }
 
+
 .burger-links{
+  font-family: 'Oswald', sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -89,7 +102,7 @@ a:hover{
     width: 100px;
     right: 13px;
     background-color: white;
-    margin-top: 86px;
+    margin-top: -1px;
     border-width: 1.3px;
     border-radius: 3px;
     border-color: #505050;
@@ -112,14 +125,21 @@ button{
     }
 }
 
+
 @media screen and (max-width: 750px) {
-    ul.links {
+    .logo-image {
+       padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    ul.hrefs {
        display: none;
     }
 }
 
 @media screen and (max-width: 750px) {
-    .burger-wrapper {
+    .burgerBtn {
        display: block;
        padding-right: 2%;
     }
@@ -129,6 +149,7 @@ button{
     .header {
         width: 100%;
         left: 0;
+        height: 60px;
     }
 }
 
