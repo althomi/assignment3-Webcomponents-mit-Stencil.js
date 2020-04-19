@@ -1,4 +1,4 @@
-import { Component, h, Prop, State} from '@stencil/core';
+import { Component, h, Prop, State, getAssetPath} from '@stencil/core';
 
 @Component({
     tag: 'header-katharina',
@@ -6,6 +6,8 @@ import { Component, h, Prop, State} from '@stencil/core';
 })
 
 export class HeaderKatharina {
+    @Prop() image1 = "default_logo.png";
+    @Prop() image2 = "Hamburger_icon.png";
     @Prop() textone: string;
     @Prop() texttwo: string;
     @Prop() textthree: string;
@@ -46,21 +48,16 @@ export class HeaderKatharina {
         return (
             <div class="wrapper">
                 <div class="header">
-                    
-                    {/* <a href="#" class="logo"><img class='logo-image' src='/assets/twitter.png' alt="Logo" /></a> */}
-                    
-                    {/* <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}><img class='burger-icon' src='/assets/facebook.png' alt="Menu" /></button> */}
-                    
                     <ul class="header-bar">
                         <li class="left">
                                     <a href="#" class="logo">
-                                        <img class='logo-image' src='/assets/twitter.png' alt="Logo" />
+                                        <img class='logo-image' src={getAssetPath(`../assets/${this.image1}`)} alt="Logo" />
                                     </a>
                         </li>
                         <li class="right">
                         <ul class="right burgermenu"> 
                                 <li> <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}>
-                                    <img class='burger-icon' src='/assets/facebook.png' alt="Menu" />
+                                    <img class='burger-icon' src={getAssetPath(`../assets/${this.image2}`)} alt="Menu" />
                                     </button>
                                 </li>
                             </ul>
@@ -71,12 +68,6 @@ export class HeaderKatharina {
                                 <li><a href="#">{this.textfour}</a></li>
                                 <li><a href="#">{this.textfive}</a></li>
                             </ul>
-                            {/* <ul class="right burgermenu"> 
-                                <li> <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}>
-                                    <img class='burger-icon' src='/assets/facebook.png' alt="Menu" />
-                                    </button>
-                                </li>
-                            </ul> */}
                         </li>
                     </ul>
                 </div>
