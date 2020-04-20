@@ -87,7 +87,7 @@ declare global {
     var HTMLHeaderKatharinaElement: {
         prototype: HTMLHeaderKatharinaElement;
         new (): HTMLHeaderKatharinaElement;
-    }
+    };
     interface HTMLLoginAlischaElement extends Components.LoginAlischa, HTMLStencilElement {
     }
     var HTMLLoginAlischaElement: {
