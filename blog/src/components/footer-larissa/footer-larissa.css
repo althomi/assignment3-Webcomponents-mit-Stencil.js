@@ -2,9 +2,13 @@
     width: 75%;
     margin: auto;
     font-family: 'Oswald', sans-serif;
-    position: absolute;
-    bottom: 2.5%;
+    bottom: 0.5%;
     left: 12.5%;
+}
+@media screen and (max-width: 750px) {
+    .footer-larissa {
+        width:100%;
+    }
 }
 
 .wrapper{
@@ -20,7 +24,7 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     .wrapper {
         grid-template-columns: 15% 12%;
         grid-column-gap: 73%;
@@ -50,7 +54,7 @@ a{
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     .img {
         width: 22%;
         padding: 0% 30% 8% 0%;
