@@ -1,6 +1,6 @@
 .loginbox{
-  height:400px;
-  width: 320px;
+  height:310px;
+  width: 280px;
   border-style: solid;
   border-color: #505050;
   border-width: 1px;
@@ -9,19 +9,24 @@
   font-family: 'Oswald', sans-serif;
   color: #505050;
   font-size: 14px;
-  position: relative;
+  position: absolute;
+  left: 70%;
+  top: 10px;
 }
 
 h1{
   position: relative;
   left: 20px;
+  font-size: 22px;
 }
 
 input{
   position: relative;
   width: 200px;
+  height: 30px;
   margin: 0 auto;
   display: block;
+  margin-top: 10px;
 }
 
 form{
@@ -31,13 +36,28 @@ vertical-align: center;
 }
 
 .button{
+  display: block;
   position: relative;
-  top: 10px;
-  left: 120px;
+  top: 20px;
+  width: 60px;
+  margin: 0 auto;
 }
-.buttonkundenkonto{
-  position: relative;
-  top: 70px;
-  left: 110px;
 
+.forgotPassword{
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+  top: 22px;
 }
+
+.buttonkundenkonto{
+  display: block;
+  position: relative;
+  top: 40px;
+  width: 80px;
+  margin: 0 auto;
+}
+
+
+
+

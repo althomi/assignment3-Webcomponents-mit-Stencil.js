@@ -10,7 +10,6 @@ import {Component,Prop, h} from "@stencil/core";
 export class LoginAlischa {
 @Prop() boxueberschrift: string;
 
-
   render(){
     return(
       <div class="loginbox">
@@ -22,11 +21,9 @@ export class LoginAlischa {
           <input type="password" placeholder='Passwort'/>
         </form>
 
-          <button-alischa class="button"></button-alischa>
+        <button-alischa class="button"></button-alischa>
+          <p class="forgotPassword"><a href="https://www.dhbw.de/startseite.html">Passwort vergessen ></a></p>
         <buttonkundenkonto-alischa class="buttonkundenkonto"></buttonkundenkonto-alischa>
-
-        <link class="linkForgotPassword"></link>
-        <button></button>
       </div>
     )
   }}

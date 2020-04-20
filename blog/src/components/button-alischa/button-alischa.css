@@ -3,17 +3,14 @@ button{
   border-color: #505050;
   border-width: 1px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #505050;
   width: 60px;
   height: 30px;
-  position: absolute;
-  left: 75%;
-  top: 10px;
 }
 
 .link {
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
-  color: #505050;
+  color: white;
   text-decoration: none;
 }

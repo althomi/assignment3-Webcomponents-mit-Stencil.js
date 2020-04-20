@@ -17,7 +17,7 @@ export class ButtonAlischa {
 
   render() {
     return (
-      <button onClick={ (event: UIEvent) => this.handleClick(event)}><a class="link" href={this.link} target="_blank">Kundenkonto</a></button>
+      <button onClick={ (event: UIEvent) => this.handleClick(event)}><a class="link" href={this.link} target="_blank">Registrieren</a></button>
     )
   }
 }
