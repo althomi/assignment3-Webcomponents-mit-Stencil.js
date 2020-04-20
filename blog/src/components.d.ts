@@ -14,6 +14,18 @@ export namespace Components {
         "zweiter": string;
         "zweiterlink": string;
     }
+    interface HeaderKatharina {
+        "burger": "Hamburger_icon.png";
+        "image1": string;
+        "image2": string;
+        "logo": "default_logo.png";
+        "search": HTMLBodyElement;
+        "textfive": string;
+        "textfour": string;
+        "textone": string;
+        "textthree": string;
+        "texttwo": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -30,6 +42,15 @@ export namespace Components {
     }
     interface SearchmaskLarissa {
     }
+    interface SliderKatharina {
+        "image1": string;
+        "image2": string;
+        "image3": string;
+        "max": number;
+        "nextBtn": Element;
+        "prevBtn": Element;
+        "slides": Array<any>;
+    }
 }
 declare global {
     interface HTMLFooterLarissaElement extends Components.FooterLarissa, HTMLStencilElement {
@@ -37,6 +58,12 @@ declare global {
     var HTMLFooterLarissaElement: {
         prototype: HTMLFooterLarissaElement;
         new (): HTMLFooterLarissaElement;
+    };
+    interface HTMLHeaderKatharinaElement extends Components.HeaderKatharina, HTMLStencilElement {
+    }
+    var HTMLHeaderKatharinaElement: {
+        prototype: HTMLHeaderKatharinaElement;
+        new (): HTMLHeaderKatharinaElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -50,10 +77,18 @@ declare global {
         prototype: HTMLSearchmaskLarissaElement;
         new (): HTMLSearchmaskLarissaElement;
     };
+    interface HTMLSliderKatharinaElement extends Components.SliderKatharina, HTMLStencilElement {
+    }
+    var HTMLSliderKatharinaElement: {
+        prototype: HTMLSliderKatharinaElement;
+        new (): HTMLSliderKatharinaElement;
+    };
     interface HTMLElementTagNameMap {
         "footer-larissa": HTMLFooterLarissaElement;
+        "header-katharina": HTMLHeaderKatharinaElement;
         "my-component": HTMLMyComponentElement;
         "searchmask-larissa": HTMLSearchmaskLarissaElement;
+        "slider-katharina": HTMLSliderKatharinaElement;
     }
 }
 declare namespace LocalJSX {
@@ -64,6 +99,18 @@ declare namespace LocalJSX {
         "ersterlink": string;
         "zweiter"?: string;
         "zweiterlink"?: string;
+    }
+    interface HeaderKatharina {
+        "burger"?: "Hamburger_icon.png";
+        "image1"?: string;
+        "image2"?: string;
+        "logo"?: "default_logo.png";
+        "search"?: HTMLBodyElement;
+        "textfive"?: string;
+        "textfour"?: string;
+        "textone"?: string;
+        "textthree"?: string;
+        "texttwo"?: string;
     }
     interface MyComponent {
         /**
@@ -84,10 +131,21 @@ declare namespace LocalJSX {
         "onOnSearchbar"?: (event: CustomEvent<any>) => void;
         "onOnToggle"?: (event: CustomEvent<any>) => void;
     }
+    interface SliderKatharina {
+        "image1"?: string;
+        "image2"?: string;
+        "image3"?: string;
+        "max"?: number;
+        "nextBtn"?: Element;
+        "prevBtn"?: Element;
+        "slides"?: Array<any>;
+    }
     interface IntrinsicElements {
         "footer-larissa": FooterLarissa;
+        "header-katharina": HeaderKatharina;
         "my-component": MyComponent;
         "searchmask-larissa": SearchmaskLarissa;
+        "slider-katharina": SliderKatharina;
     }
 }
 export { LocalJSX as JSX };
@@ -95,8 +153,10 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "footer-larissa": LocalJSX.FooterLarissa & JSXBase.HTMLAttributes<HTMLFooterLarissaElement>;
+            "header-katharina": LocalJSX.HeaderKatharina & JSXBase.HTMLAttributes<HTMLHeaderKatharinaElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "searchmask-larissa": LocalJSX.SearchmaskLarissa & JSXBase.HTMLAttributes<HTMLSearchmaskLarissaElement>;
+            "slider-katharina": LocalJSX.SliderKatharina & JSXBase.HTMLAttributes<HTMLSliderKatharinaElement>;
         }
     }
 }

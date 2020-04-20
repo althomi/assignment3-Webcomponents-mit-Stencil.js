@@ -9,14 +9,39 @@
   <script nomodule src="/build/blog.js"></script>
 </head>
 <body>
+  <div>
+    <header-katharina style="z-index: 800;"
+                      textOne="Home"
+                      textTwo="News"
+                      textThree="Products"
+                      textFour="Galery"
+                      textFive="About Us">   
+    </header-katharina>
+  </div>
+  <slider-katharina style="z-index: -800;"></slider-katharina>
 
-  <searchmask-larissa acctivated="true"></searchmask-larissa>
+   <!-- <searchmask-larissa acctivated="true"></searchmask-larissa> -->
   <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+ 
+
   <footer-larissa erster="Datenschutz" ersterlink="https://www.google.de/search?client=opera&q=datenschutz&sourceid=opera&ie=UTF-8&oe=UTF-8"
                   zweiter="Impressum" zweiterlink="https://www.e-recht24.de/artikel/datenschutz/209.html"
                   dritter="Kontakt" dritterlink="https://www.duden.de/kontakt">
                  
   </footer-larissa>
+
+
+<!-- <script>
+
+setTimeout(function() {
+            var counter = 0;
+            var interval = setInterval(function(){
+                document.getElementById('next').click(); // Clicks the button
+                 counter++; // Increases counter after every click
+                 if(counter == 10) clearInterval(interval); // Stops after 10 clicks
+            },3000); // Will click the button every second
+        }, 5000)
+</script> -->
 
 </body>
 
