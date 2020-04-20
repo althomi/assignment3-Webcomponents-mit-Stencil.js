@@ -1,0 +1,16 @@
+button{
+  border-style: solid;
+  border-color: #505050;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #505050;
+  width: 60px;
+  height: 30px;
+}
+
+.link {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}

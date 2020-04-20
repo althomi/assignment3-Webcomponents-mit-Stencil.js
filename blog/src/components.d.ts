@@ -6,6 +6,14 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ButtonAlischa {
+        "event": UIEvent;
+        "link": string;
+    }
+    interface ButtonkundenkontoAlischa {
+        "event": UIEvent;
+        "link": string;
+    }
     interface FooterLarissa {
         "dritter": string;
         "dritterlink": string;
@@ -25,6 +33,9 @@ export namespace Components {
         "textone": string;
         "textthree": string;
         "texttwo": string;
+    }
+    interface LoginAlischa {
+        "boxueberschrift": string;
     }
     interface MyComponent {
         /**
@@ -53,6 +64,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLButtonAlischaElement extends Components.ButtonAlischa, HTMLStencilElement {
+    }
+    var HTMLButtonAlischaElement: {
+        prototype: HTMLButtonAlischaElement;
+        new (): HTMLButtonAlischaElement;
+    };
+    interface HTMLButtonkundenkontoAlischaElement extends Components.ButtonkundenkontoAlischa, HTMLStencilElement {
+    }
+    var HTMLButtonkundenkontoAlischaElement: {
+        prototype: HTMLButtonkundenkontoAlischaElement;
+        new (): HTMLButtonkundenkontoAlischaElement;
+    };
     interface HTMLFooterLarissaElement extends Components.FooterLarissa, HTMLStencilElement {
     }
     var HTMLFooterLarissaElement: {
@@ -64,6 +87,12 @@ declare global {
     var HTMLHeaderKatharinaElement: {
         prototype: HTMLHeaderKatharinaElement;
         new (): HTMLHeaderKatharinaElement;
+    }
+    interface HTMLLoginAlischaElement extends Components.LoginAlischa, HTMLStencilElement {
+    }
+    var HTMLLoginAlischaElement: {
+        prototype: HTMLLoginAlischaElement;
+        new (): HTMLLoginAlischaElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -84,14 +113,25 @@ declare global {
         new (): HTMLSliderKatharinaElement;
     };
     interface HTMLElementTagNameMap {
+        "button-alischa": HTMLButtonAlischaElement;
+        "buttonkundenkonto-alischa": HTMLButtonkundenkontoAlischaElement;
         "footer-larissa": HTMLFooterLarissaElement;
         "header-katharina": HTMLHeaderKatharinaElement;
+        "login-alischa": HTMLLoginAlischaElement;
         "my-component": HTMLMyComponentElement;
         "searchmask-larissa": HTMLSearchmaskLarissaElement;
         "slider-katharina": HTMLSliderKatharinaElement;
     }
 }
 declare namespace LocalJSX {
+    interface ButtonAlischa {
+        "event"?: UIEvent;
+        "link"?: string;
+    }
+    interface ButtonkundenkontoAlischa {
+        "event"?: UIEvent;
+        "link"?: string;
+    }
     interface FooterLarissa {
         "dritter"?: string;
         "dritterlink"?: string;
@@ -111,6 +151,9 @@ declare namespace LocalJSX {
         "textone"?: string;
         "textthree"?: string;
         "texttwo"?: string;
+    }
+    interface LoginAlischa {
+        "boxueberschrift"?: string;
     }
     interface MyComponent {
         /**
@@ -141,8 +184,11 @@ declare namespace LocalJSX {
         "slides"?: Array<any>;
     }
     interface IntrinsicElements {
+        "button-alischa": ButtonAlischa;
+        "buttonkundenkonto-alischa": ButtonkundenkontoAlischa;
         "footer-larissa": FooterLarissa;
         "header-katharina": HeaderKatharina;
+        "login-alischa": LoginAlischa;
         "my-component": MyComponent;
         "searchmask-larissa": SearchmaskLarissa;
         "slider-katharina": SliderKatharina;
@@ -152,8 +198,11 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "button-alischa": LocalJSX.ButtonAlischa & JSXBase.HTMLAttributes<HTMLButtonAlischaElement>;
+            "buttonkundenkonto-alischa": LocalJSX.ButtonkundenkontoAlischa & JSXBase.HTMLAttributes<HTMLButtonkundenkontoAlischaElement>;
             "footer-larissa": LocalJSX.FooterLarissa & JSXBase.HTMLAttributes<HTMLFooterLarissaElement>;
             "header-katharina": LocalJSX.HeaderKatharina & JSXBase.HTMLAttributes<HTMLHeaderKatharinaElement>;
+            "login-alischa": LocalJSX.LoginAlischa & JSXBase.HTMLAttributes<HTMLLoginAlischaElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "searchmask-larissa": LocalJSX.SearchmaskLarissa & JSXBase.HTMLAttributes<HTMLSearchmaskLarissaElement>;
             "slider-katharina": LocalJSX.SliderKatharina & JSXBase.HTMLAttributes<HTMLSliderKatharinaElement>;
