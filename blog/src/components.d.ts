@@ -6,6 +6,16 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ArticleNina {
+        "arrow": "articlearrow.png";
+        "brandname": string;
+        "date": string;
+        "headline": string;
+        "image": "article1.jpeg";
+        "readmore": string;
+        "text": string;
+        "theme": string;
+    }
     interface ButtonAlischa {
         "event": UIEvent;
         "link": string;
@@ -13,6 +23,11 @@ export namespace Components {
     interface ButtonkundenkontoAlischa {
         "event": UIEvent;
         "link": string;
+    }
+    interface CookiebannerNina {
+        "button": string;
+        "link": string;
+        "text": string;
     }
     interface FooterLarissa {
         "dritter": string;
@@ -64,6 +79,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLArticleNinaElement extends Components.ArticleNina, HTMLStencilElement {
+    }
+    var HTMLArticleNinaElement: {
+        prototype: HTMLArticleNinaElement;
+        new (): HTMLArticleNinaElement;
+    };
     interface HTMLButtonAlischaElement extends Components.ButtonAlischa, HTMLStencilElement {
     }
     var HTMLButtonAlischaElement: {
@@ -76,6 +97,12 @@ declare global {
         prototype: HTMLButtonkundenkontoAlischaElement;
         new (): HTMLButtonkundenkontoAlischaElement;
     };
+    interface HTMLCookiebannerNinaElement extends Components.CookiebannerNina, HTMLStencilElement {
+    }
+    var HTMLCookiebannerNinaElement: {
+        prototype: HTMLCookiebannerNinaElement;
+        new (): HTMLCookiebannerNinaElement;
+    };
     interface HTMLFooterLarissaElement extends Components.FooterLarissa, HTMLStencilElement {
     }
     var HTMLFooterLarissaElement: {
@@ -87,7 +114,7 @@ declare global {
     var HTMLHeaderKatharinaElement: {
         prototype: HTMLHeaderKatharinaElement;
         new (): HTMLHeaderKatharinaElement;
-    }
+    };
     interface HTMLLoginAlischaElement extends Components.LoginAlischa, HTMLStencilElement {
     }
     var HTMLLoginAlischaElement: {
@@ -113,8 +140,10 @@ declare global {
         new (): HTMLSliderKatharinaElement;
     };
     interface HTMLElementTagNameMap {
+        "article-nina": HTMLArticleNinaElement;
         "button-alischa": HTMLButtonAlischaElement;
         "buttonkundenkonto-alischa": HTMLButtonkundenkontoAlischaElement;
+        "cookiebanner-nina": HTMLCookiebannerNinaElement;
         "footer-larissa": HTMLFooterLarissaElement;
         "header-katharina": HTMLHeaderKatharinaElement;
         "login-alischa": HTMLLoginAlischaElement;
@@ -124,6 +153,16 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface ArticleNina {
+        "arrow"?: "articlearrow.png";
+        "brandname"?: string;
+        "date"?: string;
+        "headline"?: string;
+        "image"?: "article1.jpeg";
+        "readmore"?: string;
+        "text"?: string;
+        "theme"?: string;
+    }
     interface ButtonAlischa {
         "event"?: UIEvent;
         "link"?: string;
@@ -131,6 +170,11 @@ declare namespace LocalJSX {
     interface ButtonkundenkontoAlischa {
         "event"?: UIEvent;
         "link"?: string;
+    }
+    interface CookiebannerNina {
+        "button"?: string;
+        "link"?: string;
+        "text"?: string;
     }
     interface FooterLarissa {
         "dritter"?: string;
@@ -184,8 +228,10 @@ declare namespace LocalJSX {
         "slides"?: Array<any>;
     }
     interface IntrinsicElements {
+        "article-nina": ArticleNina;
         "button-alischa": ButtonAlischa;
         "buttonkundenkonto-alischa": ButtonkundenkontoAlischa;
+        "cookiebanner-nina": CookiebannerNina;
         "footer-larissa": FooterLarissa;
         "header-katharina": HeaderKatharina;
         "login-alischa": LoginAlischa;
@@ -198,8 +244,10 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "article-nina": LocalJSX.ArticleNina & JSXBase.HTMLAttributes<HTMLArticleNinaElement>;
             "button-alischa": LocalJSX.ButtonAlischa & JSXBase.HTMLAttributes<HTMLButtonAlischaElement>;
             "buttonkundenkonto-alischa": LocalJSX.ButtonkundenkontoAlischa & JSXBase.HTMLAttributes<HTMLButtonkundenkontoAlischaElement>;
+            "cookiebanner-nina": LocalJSX.CookiebannerNina & JSXBase.HTMLAttributes<HTMLCookiebannerNinaElement>;
             "footer-larissa": LocalJSX.FooterLarissa & JSXBase.HTMLAttributes<HTMLFooterLarissaElement>;
             "header-katharina": LocalJSX.HeaderKatharina & JSXBase.HTMLAttributes<HTMLHeaderKatharinaElement>;
             "login-alischa": LocalJSX.LoginAlischa & JSXBase.HTMLAttributes<HTMLLoginAlischaElement>;
