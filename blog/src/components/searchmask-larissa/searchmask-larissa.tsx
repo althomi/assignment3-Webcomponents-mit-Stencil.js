@@ -8,8 +8,8 @@ import { Component, State, Event, EventEmitter,h } from '@stencil/core';
 export class SearchmaskLarissa {
 
 @State() toggle : boolean = true;
-@State() searchbar : boolean = false;
-@State() schliessen : boolean = true;
+@State() searchbar : boolean = false; loginBox
+@State() schliessen : boolean = true; open
 @Event() onToggle : EventEmitter;
 @Event() onSearchbar : EventEmitter;
 @Event() onSchliessen : EventEmitter;
@@ -38,19 +38,19 @@ displaySchliessen() : void {
                 <form class="eingabefeld">
                     <input type="search" list="Vögel" placeholder='Geben Sie hier Ihren Suchbegriff ein ...' maxlength="18"/>
                     <datalist id="Vögel">
-                        <option value="Amsel"/> 
-                        <option value="Buntspecht"/> 
-                        <option value="Drossel"/> 
-                        <option value="Eisvogel"/> 
-                        <option value="Fink"/> 
-                        <option value="Graugans"/> 
+                        <option value="Amsel"/>
+                        <option value="Buntspecht"/>
+                        <option value="Drossel"/>
+                        <option value="Eisvogel"/>
+                        <option value="Fink"/>
+                        <option value="Graugans"/>
                         <option value="Meise"/>
-                        <option value="Spatz"/> 
-                        <option value="Specht"/> 
+                        <option value="Spatz"/>
+                        <option value="Specht"/>
                     </datalist>
                     <button class={this.schliessen ? 'activated-schliessen' : 'inactive'} onClick={() => this.displaySchliessen()}><img src="/assets/schliessen.png" class="schliessen-standart"/></button>
                 </form>
                 </div>
              </div> );
-  }  
+  }
 }

@@ -1,4 +1,4 @@
-import {Component, Prop, h} from "@stencil/core";
+import {Component, Prop, Event, h, EventEmitter} from "@stencil/core";
 @Component({
   tag: 'button-alischa',
   styleUrl: 'button-alischa.css',
@@ -6,18 +6,19 @@ import {Component, Prop, h} from "@stencil/core";
 })
 
 export class ButtonAlischa {
-  @Prop() event: UIEvent;
+  @Event() onClick: EventEmitter;
   @Prop() link: string;
 
-  handleClick(event: UIEvent) {
-    this.event = event;
-    console.log ("login click successfull");
-  }
+  handleClick() {
+    console.log("login click successfull")}
 
 
   render() {
-    return (
-      <button onClick={ (event: UIEvent) => this.handleClick(event)}><a class="link" href={this.link} target="_blank">Login</a></button>
-    )
+    return(
+      <button onClick={() => this.handleClick()}>Login</button>
+  )
+
+
   }
 }
+

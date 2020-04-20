@@ -1,4 +1,4 @@
-import {Component,Prop, h} from "@stencil/core";
+import {Component, Prop, h, Event, EventEmitter} from "@stencil/core";
 
 @Component({
   tag: 'login-alischa',
@@ -9,6 +9,10 @@ import {Component,Prop, h} from "@stencil/core";
 
 export class LoginAlischa {
 @Prop() boxueberschrift: string;
+@Event() onClick: EventEmitter;
+
+  handleClick() {
+    console.log("password click successfull")}
 
   render(){
     return(
@@ -22,7 +26,7 @@ export class LoginAlischa {
         </form>
 
         <button-alischa class="button"></button-alischa>
-          <p class="forgotPassword"><a href="https://www.dhbw.de/startseite.html">Passwort vergessen ></a></p>
+          <p class="forgotPassword" onClick={() => this.handleClick()}>Passwort vergessen > </p>
         <buttonkundenkonto-alischa class="buttonkundenkonto"></buttonkundenkonto-alischa>
       </div>
     )
