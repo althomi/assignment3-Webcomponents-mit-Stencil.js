@@ -13,6 +13,20 @@
   left: 70%;
   top: 10px;
 }
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #505050;
+  border-top: 10px solid transparent;
+  right: 50%;
+  top: -20px;
+}
+
+
 
 h1{
   position: relative;

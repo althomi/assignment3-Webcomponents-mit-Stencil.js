@@ -12,7 +12,7 @@ export class LoginAlischa {
 
   render(){
     return(
-      <div class="loginbox">
+      <div class="loginbox sb1">
         <h1> {this.boxueberschrift} </h1>
         <form class="input">
           <input type="email" placeholder='Email-Adresse'/>
