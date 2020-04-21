@@ -1,4 +1,4 @@
-import {Component,Prop, State, EventEmitter, h} from "@stencil/core";
+import {Component,Prop, State, Event, EventEmitter, h} from "@stencil/core";
 
 @Component({
   tag: 'login-alischa',
@@ -10,15 +10,35 @@ import {Component,Prop, State, EventEmitter, h} from "@stencil/core";
 export class LoginAlischa {
   @State() click: boolean = true;
   @State() close : boolean = true;
-  @State() open : boolean = true;
+  @State() open : boolean = false;
   @Prop() boxueberschrift: string;
+  @Event() onClick : EventEmitter;
   @Event() onClickOpen: EventEmitter;
   @Event() onClickClose: EventEmitter;
 
+  toggleComponent() : void {
+    this.click = !this.click;
+    this.openLoginBox();
+    this.onClick.emit({visible: this.click}
+    )
+  }
+
+  openLoginBox() : void {
+    this.open = !this.open;
+    this.onClickOpen.emit({visible: this.open})
+  }
+
+  closeLoginBox() : void {
+    this.close = !this.close;
+    this.onClickClose.emit({visible: this.close})
+  }
 
   render(){
     return(
-      <div class="loginbox sb1">
+      <div>
+        <button-alischa class="button"></button-alischa>
+        <div class="loginbox sb1">
+        <button></button>
         <h1> {this.boxueberschrift} </h1>
         <form class="input">
           <input type="email" placeholder='Email-Adresse'/>
@@ -30,6 +50,7 @@ export class LoginAlischa {
         <button-alischa class="button"></button-alischa>
           <p class="forgotPassword"><a href="https://www.dhbw.de/startseite.html">Passwort vergessen ></a></p>
         <buttonkundenkonto-alischa class="buttonkundenkonto"></buttonkundenkonto-alischa>
+      </div>
       </div>
     )
   }}

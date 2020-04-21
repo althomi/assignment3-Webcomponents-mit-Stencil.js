@@ -107,6 +107,9 @@ declare namespace LocalJSX {
     }
     interface LoginAlischa {
         "boxueberschrift"?: string;
+        "onOnClick"?: (event: CustomEvent<any>) => void;
+        "onOnClickClose"?: (event: CustomEvent<any>) => void;
+        "onOnClickOpen"?: (event: CustomEvent<any>) => void;
     }
     interface MyComponent {
         /**
