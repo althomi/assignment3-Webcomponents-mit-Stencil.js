@@ -1,4 +1,4 @@
-import { Component, Prop, h, State, Listen, Method   } from '@stencil/core';
+import { Component, Prop, h, State, } from '@stencil/core';
 
 @Component({
     tag: 'slider-katharina',
