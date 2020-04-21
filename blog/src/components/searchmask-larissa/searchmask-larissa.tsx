@@ -9,7 +9,11 @@ export class SearchmaskLarissa {
 
 @State() toggle : boolean = true;
 @State() searchbar : boolean = false;
+<<<<<<< Updated upstream
 @State() schliessen : boolean = true;
+=======
+@State() schliessen : boolean = true; open
+>>>>>>> Stashed changes
 @Event() onToggle : EventEmitter;
 @Event() onSearchbar : EventEmitter;
 @Event() onSchliessen : EventEmitter;
