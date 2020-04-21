@@ -19,6 +19,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: none;
+}
+
 
 #title-img {
     max-width: 100%;
@@ -40,10 +45,20 @@
     color: darkgrey;
 }
 
+.article-brand:hover {
+    color: grey;
+}
+
+
 .article-theme {
     width: 100px;
     font-size: small;
     color: darkgrey;
+}
+
+.article-theme:hover {
+    color: darkgrey;
+    text-decoration: underline;
 }
 
 .article-headline {
@@ -58,6 +73,7 @@
     font-family: Arial, Helvetica, sans-serif;
     width: 300px;
     height: 140px;
+    color: black;
 }
 
 .article-date {
@@ -70,11 +86,16 @@
     margin-left: 90px;
     margin-right: 3px;
     font-size: small;
+}
+
+.more {
     color: dimgray;
 }
-/* .article-arrow {
-    width: 30px;
-} */
+
+.article-readmore:hover {
+    color: dimgray;
+    text-decoration: underline;
+}
 
 .wrapper{
     display: grid;

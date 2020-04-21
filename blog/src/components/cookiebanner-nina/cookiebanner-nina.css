@@ -35,15 +35,26 @@
   font-weight: lighter;
 }
 
+
 #footer-cookie #accept a {
   border: 1px solid #707070;
   padding: 7px 80px;
   text-decoration: none;
   background: #DEDEDE;
-
 }
 
+#footer-cookie:hover #accept a:hover {
+    background: #707070;
+    color: #DEDEDE;
+}
 
+.more {
+    color: #707070;
+}
+
+.more:hover {
+    color: rgb(165, 164, 164);
+}
 
 @media (max-width: 1200px) {
   #footer-cookie {
