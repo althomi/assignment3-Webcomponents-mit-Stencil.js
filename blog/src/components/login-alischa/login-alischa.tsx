@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-import {Component,Prop, h} from "@stencil/core";
-=======
-import {Component, Prop, h, Event, EventEmitter, State} from "@stencil/core";
->>>>>>> Stashed changes
+import {Component,Prop, State, EventEmitter, h} from "@stencil/core";
 
 @Component({
   tag: 'login-alischa',
@@ -13,7 +9,12 @@ import {Component, Prop, h, Event, EventEmitter, State} from "@stencil/core";
 
 export class LoginAlischa {
   @State() click: boolean = true;
-@Prop() boxueberschrift: string;
+  @State() close : boolean = true;
+  @State() open : boolean = true;
+  @Prop() boxueberschrift: string;
+  @Event() onClickOpen: EventEmitter;
+  @Event() onClickClose: EventEmitter;
+
 
   render(){
     return(
