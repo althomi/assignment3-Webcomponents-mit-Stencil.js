@@ -17,8 +17,6 @@ export class ButtonAlischa {
     return(
       <button onClick={() => this.handleClick()}>Login</button>
   )
-
-
   }
 }
 
