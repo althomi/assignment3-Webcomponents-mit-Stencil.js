@@ -1,6 +1,7 @@
 .suchleiste-allgemein{
     width: 15%;
-    margin: auto;
+    position: absolute;
+    right: 0;
 }
 
 .lupe-standart{

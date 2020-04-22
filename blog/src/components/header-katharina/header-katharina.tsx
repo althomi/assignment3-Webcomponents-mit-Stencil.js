@@ -1,4 +1,5 @@
 import { Component, h, Prop, State, getAssetPath} from '@stencil/core';
+import { SearchmaskLarissa } from '../searchmask-larissa/searchmask-larissa';
 
 @Component({
     tag: 'header-katharina',

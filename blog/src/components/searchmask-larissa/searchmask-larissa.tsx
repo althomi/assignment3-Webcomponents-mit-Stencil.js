@@ -3,7 +3,7 @@ import { Component, State, Event, EventEmitter,h } from '@stencil/core';
 @Component({
   tag: 'searchmask-larissa',
   styleUrl: 'searchmask-larissa.css',
-  shadow: true
+  // shadow: true
 })
 export class SearchmaskLarissa {
 
