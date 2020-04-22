@@ -43,13 +43,11 @@ export namespace Components {
     interface SearchmaskLarissa {
     }
     interface SliderKatharina {
-        "image1": string;
-        "image2": string;
-        "image3": string;
-        "max": number;
+        "bildone": string;
+        "bildthree": string;
+        "bildtwo": string;
         "nextBtn": Element;
         "prevBtn": Element;
-        "slides": Array<any>;
     }
 }
 declare global {
@@ -132,13 +130,11 @@ declare namespace LocalJSX {
         "onOnToggle"?: (event: CustomEvent<any>) => void;
     }
     interface SliderKatharina {
-        "image1"?: string;
-        "image2"?: string;
-        "image3"?: string;
-        "max"?: number;
+        "bildone"?: string;
+        "bildthree"?: string;
+        "bildtwo"?: string;
         "nextBtn"?: Element;
         "prevBtn"?: Element;
-        "slides"?: Array<any>;
     }
     interface IntrinsicElements {
         "footer-larissa": FooterLarissa;

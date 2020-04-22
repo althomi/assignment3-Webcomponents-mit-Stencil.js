@@ -1,4 +1,4 @@
-import { Component, Prop, h, State, Listen, Method   } from '@stencil/core';
+import { Component, Prop, h, State, getAssetPath} from '@stencil/core';
 
 @Component({
     tag: 'slider-katharina',
@@ -8,26 +8,26 @@ import { Component, Prop, h, State, Listen, Method   } from '@stencil/core';
 })
 
 export class SliderKatharina {
-    @Prop() image1 = "ship.jpg";
-    @Prop() image2 = "nebel.jpg";
-    @Prop() image3 = "forest.jpg";
+    @Prop() bildone : string;
+    @Prop() bildtwo : string;
+    @Prop() bildthree : string;
 
     @Prop() prevBtn = document.querySelector('#prev');
     @Prop() nextBtn = document.querySelector('#next');
 
-    @Prop() slides: Array<any> = [
-        {
-            imageUrl: `../assets/${this.image1}`
-        },
-        {
-            imageUrl: `../assets/${this.image2}`
-        },
-        {
-            imageUrl: `../assets/${this.image3}`
-        }
-    ]
+    // @Prop() slides: Array<any> = [
+    //     {
+    //         imageUrl: `../assets/${this.image1}`
+    //     },
+    //     {
+    //         imageUrl: `../assets/${this.image2}`
+    //     },
+    //     {
+    //         imageUrl: `../assets/${this.image3}`
+    //     }
+    // ]
 
-    @Prop() max = this.slides.length-1;
+    // @Prop() max = this.slides.length-1;
 
     @State() count = 0;
     @State() nextSlides = false;
@@ -61,11 +61,21 @@ export class SliderKatharina {
     // }
 
     render(){
+        console.log(this.bildone);
+        console.log(this.bildtwo);
         console.log(this.nextSlides);
-        let sliderShow =  <img src = {this.slides[0].imageUrl}></img> ;
+        var imageArray = new Array<any>();
+        imageArray.push(`/assets/${this.bildone}`);
+        imageArray.push(`../assets/${this.bildtwo}`);
+        imageArray.push(`../assets/${this.bildthree}`);
+
+        console.log(imageArray)
+       var max =  imageArray.length-1;
+
+        let sliderShow =  <img src = {imageArray[0]}></img> ;
         // next Slide
         if(this.nextSlides){
-                if(this.count < this.max){
+                if(this.count < max){
                     console.log('if');
                     this.count++;
                     console.log(this.count);
@@ -74,7 +84,7 @@ export class SliderKatharina {
                     this.count = 0;
                 }
             sliderShow = (
-                <img src = {this.slides[this.count].imageUrl}></img>  
+                <img src = {imageArray[this.count]}></img>  
             );    
             this.nextSlides = false;
         }
@@ -87,10 +97,10 @@ export class SliderKatharina {
                     console.log(this.count);
                 }else{
                     console.log('else');
-                    this.count = this.max;
+                    this.count = max;
                 }
             sliderShow = (
-                <img src = {this.slides[this.count].imageUrl}></img>  
+                <img src = {imageArray[this.count]}></img>  
             );
             this.prevSlides = false;
         }
@@ -99,6 +109,7 @@ export class SliderKatharina {
 
         return (
             <div class='wrapper'>
+
                 <button id="prev" onClick={this.prevSlidesHandler.bind(this)}>
                     <img class='imgBtn' src = '../assets/ArrowLeft.png'></img>
                 </button> 
