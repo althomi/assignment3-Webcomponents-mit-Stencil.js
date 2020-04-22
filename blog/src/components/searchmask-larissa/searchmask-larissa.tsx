@@ -35,6 +35,7 @@ displaySchliessen() : void {
     return(  <div class="suchleiste-allgemein">
                 <button class={this.toggle ? 'activated-lupe' : 'inactive'} onClick={() => this.toggleComponent()}> <img src="/assets/lupe.png" class="lupe-standart"/></button>
                 <div class={this.searchbar ? 'activated-searchbar' : 'inactive'} >
+                  <div class='place'>
                 <form class="eingabefeld">
                     <input type="search" list="Vögel" placeholder='Geben Sie hier Ihren Suchbegriff ein ...' maxlength="18"/>
                     <datalist id="Vögel">
@@ -50,6 +51,7 @@ displaySchliessen() : void {
                     </datalist>
                     <button class={this.schliessen ? 'activated-schliessen' : 'inactive'} onClick={() => this.displaySchliessen()}><img src="/assets/schliessen.png" class="schliessen-standart"/></button>
                 </form>
+                </div>
                 </div>
              </div> );
   }  

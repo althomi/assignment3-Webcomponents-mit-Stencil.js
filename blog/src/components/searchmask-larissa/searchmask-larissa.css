@@ -1,7 +1,16 @@
 .suchleiste-allgemein{
-    width: 15%;
+    width: 75%;
+    margin: auto;
     position: absolute;
-    right: 0;
+    right: 12.5%;
+}
+
+
+@media screen and (max-width: 750px) {
+    .suchleiste-allgemein {
+        top: 28px;
+        right: 2%;
+    }
 }
 
 .lupe-standart{
@@ -10,18 +19,17 @@
 }
 
 .activated-lupe{
-    width: 10%;
-    height: 10%;
-    padding: 0;
-    margin: 0;
+    width: 34px;
+    /* padding-top: 32px; */
+    float: right;
     border: none;
     background-color: transparent;
     display: block;
 }
 
 .schliessen-standart{
-    width: 82%;
-    padding-left: 100%;
+    width: 20px;
+    padding-left: 75%;
     display: block;
 }
 
