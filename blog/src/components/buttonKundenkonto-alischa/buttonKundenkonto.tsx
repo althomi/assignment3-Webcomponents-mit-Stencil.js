@@ -10,7 +10,7 @@ export class RegisterAlischa {
   @Event() onClick: EventEmitter;
 
   handleClick() {
-    console.log ("register click successfull");
+    console.log ("register click successful");
   }
 
 

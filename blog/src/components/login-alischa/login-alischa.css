@@ -1,5 +1,6 @@
 .loginbox{
   height:310px;
+  display: block;
   width: 280px;
   border-style: solid;
   border-color: #505050;
@@ -23,21 +24,6 @@
   border-bottom: 10px solid #505050;
   border-top: 10px solid transparent;
   right: 50%;
-  top: -20px;
-}
-
-
-
-.sb5:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #505050;
-  border-top: 10px solid transparent;
-  right: 150px;
   top: -20px;
 }
 
@@ -74,6 +60,15 @@ vertical-align: center;
   margin: 0 auto;
 }
 
+.buttonOrig{
+  display: block;
+  position: relative;
+  top: -725px;
+  right: -465px;
+  width: 60px;
+  margin: 0 auto;
+}
+
 .forgotPassword{
   position: relative;
   font-size: 12px;
@@ -87,10 +82,6 @@ vertical-align: center;
   top: 40px;
   width: 80px;
   margin: 0 auto;
-}
-
-.hiddenLogin{
-  display: none;
 }
 
 

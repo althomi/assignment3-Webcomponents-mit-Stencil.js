@@ -10,7 +10,7 @@ export class ButtonAlischa {
   @Prop() link: string;
 
   handleClick() {
-    console.log("login click successfull")}
+    console.log("login click successful")}
 
 
   render() {

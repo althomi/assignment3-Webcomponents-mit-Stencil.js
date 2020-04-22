@@ -174,11 +174,6 @@ declare namespace LocalJSX {
         "link"?: string;
         "text"?: string;
     }
-    interface CookiebannerNina {
-        "button"?: string;
-        "link"?: string;
-        "text"?: string;
-    }
     interface FooterLarissa {
         "dritter"?: string;
         "dritterlink"?: string;
@@ -202,6 +197,8 @@ declare namespace LocalJSX {
     interface LoginAlischa {
         "boxueberschrift"?: string;
         "onOnClick"?: (event: CustomEvent<any>) => void;
+        "onOnClickClose"?: (event: CustomEvent<any>) => void;
+        "onOnClickOpen"?: (event: CustomEvent<any>) => void;
     }
     interface MyComponent {
         /**
@@ -221,15 +218,6 @@ declare namespace LocalJSX {
         "onEventSchliessen"?: (event: CustomEvent<any>) => void;
         "onEventSearchbar"?: (event: CustomEvent<any>) => void;
         "onEventToggle"?: (event: CustomEvent<any>) => void;
-    }
-    interface SliderKatharina {
-        "image1"?: string;
-        "image2"?: string;
-        "image3"?: string;
-        "max"?: number;
-        "nextBtn"?: Element;
-        "prevBtn"?: Element;
-        "slides"?: Array<any>;
     }
     interface SliderKatharina {
         "image1"?: string;

@@ -8,8 +8,8 @@ import { Component, State, Event, EventEmitter,h } from '@stencil/core';
 export class SearchmaskLarissa {
 
 @State() toggle : boolean = true;
-@State() searchbar : boolean = false; loginBox
-@State() schliessen : boolean = true; open
+@State() searchbar : boolean = false;
+@State() schliessen : boolean = true;
 @Event() eventToggle : EventEmitter;
 @Event() eventSearchbar : EventEmitter;
 @Event() eventSchliessen : EventEmitter;
