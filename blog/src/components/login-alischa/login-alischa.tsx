@@ -10,12 +10,10 @@ import {Component,Prop, State, Event, EventEmitter, h} from "@stencil/core";
 
 export class LoginAlischa {
   @State() click: boolean = false;
-  @State() close : boolean = true;
   @State() open : boolean = false;
   @Prop() boxueberschrift: string;
   @Event() onClick : EventEmitter;
   @Event() onClickOpen: EventEmitter;
-  @Event() onClickClose: EventEmitter;
 
   clickComponent() : void {
     this.click = !this.click;
