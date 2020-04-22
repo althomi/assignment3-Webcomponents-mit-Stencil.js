@@ -8,27 +8,27 @@ import { Component, State, Event, EventEmitter,h } from '@stencil/core';
 export class SearchmaskLarissa {
 
 @State() toggle : boolean = true;
-@State() searchbar : boolean = false;
-@State() schliessen : boolean = true;
-@Event() onToggle : EventEmitter;
-@Event() onSearchbar : EventEmitter;
-@Event() onSchliessen : EventEmitter;
+@State() searchbar : boolean = false; loginBox
+@State() schliessen : boolean = true; open
+@Event() eventToggle : EventEmitter;
+@Event() eventSearchbar : EventEmitter;
+@Event() eventSchliessen : EventEmitter;
 
 toggleComponent() : void {
     this.toggle = !this.toggle;
     this.displaySearchbar();
-    this.onToggle.emit({visible: this.toggle}
+    this.eventToggle.emit({visible: this.toggle}
 )
 }
 
 displaySearchbar() : void {
     this.searchbar = !this.searchbar;
-    this.onSearchbar.emit({visible: this.searchbar})
+    this.eventSearchbar.emit({visible: this.searchbar})
 }
 
 displaySchliessen() : void {
     this.schliessen = !this.schliessen;
-    this.onSchliessen.emit({visible: this.schliessen})
+    this.eventSchliessen.emit({visible: this.schliessen})
 }
 
   render() {

@@ -1,0 +1,160 @@
+.logo{
+    margin: 0;
+}
+
+.logo-image {
+    width: 6em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.burger-icon {
+    width: 3em;
+    right: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-right: 22px;
+}
+
+.burgerBtn{
+    float: right;
+    display: none;
+}
+
+.hrefs {
+    text-align: right;
+    list-style: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 0;
+}
+
+.left{
+    text-align: left;
+    float: left;
+}
+
+.right{
+    text-align: right;
+    
+}
+
+.right li {
+    display: inline;
+    padding: 6px 10px;
+
+    
+}
+.header-bar{
+    padding:0;
+}
+
+.header-bar>li {
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: black;  
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.header {
+    width: 75%;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    top: 10px;
+    left: 12.5%;
+    border-bottom-width: 1.3px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-color: #505050;
+    border-bottom-style: solid;
+}
+
+
+.burger-links{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.burger-links>a{
+    line-height: 3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.burger-wrapper {
+    float: right;
+    display: none;
+}
+
+.menu{
+    position: relative;
+    float: right;
+    width: 100px;
+    right: 13px;
+    background-color: white;
+    margin-top: -1px;
+    border-width: 1.3px;
+    border-radius: 3px;
+    border-color: #505050;
+    border-style: solid;
+    border-top-width: 1.3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0px;
+    border-top-color: white;
+    border-top-style: solid;
+}
+
+button{
+    border: none;
+    background: transparent;
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        width: 22%;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .logo-image {
+       padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    ul.hrefs {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .burgerBtn {
+       display: block;
+       padding-right: 2%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        width: 100%;
+        left: 0;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .menu {
+       display:none;
+    }
+}

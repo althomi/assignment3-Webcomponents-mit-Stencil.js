@@ -1,0 +1,93 @@
+.article {
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    left: 12.5%;
+}
+
+.article-card {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px solid darkgray;
+    box-shadow: 10px 10px 5px grey;
+
+}
+
+
+#title-img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+
+#arrow-img {
+    width: 6px;
+}
+
+.article-brand {
+    width: 100px;
+    margin-right: 15px;
+    font-size: small;
+    border: solid 1px;
+    border-radius: 10px;
+    color: darkgrey;
+}
+
+.article-theme {
+    width: 100px;
+    font-size: small;
+    color: darkgrey;
+}
+
+.article-headline {
+    color: dimgray;
+    width: 300px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: x-large;
+}
+
+.article-text {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 140px;
+}
+
+.article-date {
+    font-size: x-small;
+    color: darkgrey;
+    margin-left: 130px;
+}
+
+.article-readmore {
+    margin-left: 90px;
+    margin-right: 3px;
+    font-size: small;
+    color: dimgray;
+}
+/* .article-arrow {
+    width: 30px;
+} */
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 15% 20%;
+    grid-column-gap: 65%;
+}
+
+
+@media (max-width: 600px) {
+    .article-card {
+        width: 250;
+        height: 400px;
+        align-items: center;
+
+    }
+}

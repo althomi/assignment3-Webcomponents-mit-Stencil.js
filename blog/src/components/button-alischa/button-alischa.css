@@ -6,11 +6,6 @@ button{
   background-color: #505050;
   width: 60px;
   height: 30px;
-}
-
-.link {
-  font-family: 'Oswald', sans-serif;
-  font-size: 14px;
   color: white;
-  text-decoration: none;
+  cursor: pointer;
 }

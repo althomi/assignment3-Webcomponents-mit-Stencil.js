@@ -28,6 +28,23 @@
 
 
 
+.sb5:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #505050;
+  border-top: 10px solid transparent;
+  right: 150px;
+  top: -20px;
+}
+
+p{
+  cursor: pointer;
+}
+
 h1{
   position: relative;
   left: 20px;

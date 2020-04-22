@@ -17,11 +17,9 @@ export namespace Components {
         "theme": string;
     }
     interface ButtonAlischa {
-        "event": UIEvent;
         "link": string;
     }
     interface ButtonkundenkontoAlischa {
-        "event": UIEvent;
         "link": string;
     }
     interface CookiebannerNina {
@@ -164,12 +162,17 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface ButtonAlischa {
-        "event"?: UIEvent;
         "link"?: string;
+        "onOnClick"?: (event: CustomEvent<any>) => void;
     }
     interface ButtonkundenkontoAlischa {
-        "event"?: UIEvent;
         "link"?: string;
+        "onOnClick"?: (event: CustomEvent<any>) => void;
+    }
+    interface CookiebannerNina {
+        "button"?: string;
+        "link"?: string;
+        "text"?: string;
     }
     interface CookiebannerNina {
         "button"?: string;
@@ -199,8 +202,6 @@ declare namespace LocalJSX {
     interface LoginAlischa {
         "boxueberschrift"?: string;
         "onOnClick"?: (event: CustomEvent<any>) => void;
-        "onOnClickClose"?: (event: CustomEvent<any>) => void;
-        "onOnClickOpen"?: (event: CustomEvent<any>) => void;
     }
     interface MyComponent {
         /**
@@ -217,9 +218,18 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface SearchmaskLarissa {
-        "onOnSchliessen"?: (event: CustomEvent<any>) => void;
-        "onOnSearchbar"?: (event: CustomEvent<any>) => void;
-        "onOnToggle"?: (event: CustomEvent<any>) => void;
+        "onEventSchliessen"?: (event: CustomEvent<any>) => void;
+        "onEventSearchbar"?: (event: CustomEvent<any>) => void;
+        "onEventToggle"?: (event: CustomEvent<any>) => void;
+    }
+    interface SliderKatharina {
+        "image1"?: string;
+        "image2"?: string;
+        "image3"?: string;
+        "max"?: number;
+        "nextBtn"?: Element;
+        "prevBtn"?: Element;
+        "slides"?: Array<any>;
     }
     interface SliderKatharina {
         "image1"?: string;
