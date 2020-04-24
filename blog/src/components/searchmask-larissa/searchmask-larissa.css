@@ -2,6 +2,7 @@
     width: 300px;
     margin-left: 97%;
     height: 50px;
+    z-index: 100px;
 }
 
 .allgemein{
@@ -48,7 +49,7 @@
 .activated-searchbar{
     height: 100%;
     width: 100%;
-    display: block;
+    display: absolute;
     margin-right: 100%;
 }
 

@@ -11,8 +11,8 @@
   color: #505050;
   font-size: 14px;
   position: absolute;
-  left: 70%;
-  top: 100px;
+  left: 72.1%;
+  top: 58px;
 }
 .sb1:before {
   content: "";
@@ -23,7 +23,7 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid #505050;
   border-top: 10px solid transparent;
-  right: 50%;
+  right: 12%;
   top: -20px;
 }
 
@@ -63,9 +63,9 @@ vertical-align: center;
 .buttonOrig{
   display: block;
   position: relative;
-  top: -725px;
-  right: -465px;
-  width: 60px;
+  top: -690px;
+  right: -630px;
+  width: 0px;
   margin: 0 auto;
 }
 
