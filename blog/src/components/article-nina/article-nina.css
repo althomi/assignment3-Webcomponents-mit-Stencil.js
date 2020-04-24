@@ -1,8 +1,7 @@
 .article {
-    margin: auto;
+    margin-left: 11.7%;
     font-family: 'Oswald', sans-serif;
-    position: absolute;
-    left: 12.5%;
+    position: static;
 }
 
 .article-card {

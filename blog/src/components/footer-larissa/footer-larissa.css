@@ -2,8 +2,11 @@
     width: 75%;
     margin: auto;
     font-family: 'Oswald', sans-serif;
-    bottom: 0.5%;
+    bottom: 0%;
+    position: fixed;
     left: 12.5%;
+    z-index: 100;
+    background-color: #fff;
 }
 @media screen and (max-width: 750px) {
     .footer-larissa {
