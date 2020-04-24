@@ -9,10 +9,8 @@ export class SearchmaskLarissa {
 
 @State() toggle : boolean = true;
 @State() searchbar : boolean = false;
-@State() schliessen : boolean = true;
 @Event() eventToggle : EventEmitter;
 @Event() eventSearchbar : EventEmitter;
-@Event() eventSchliessen : EventEmitter;
 
 toggleComponent() : void {
     this.toggle = !this.toggle;
@@ -27,12 +25,11 @@ displaySearchbar() : void {
 }
 
 displaySchliessen() : void {
-    this.schliessen = !this.schliessen;
-    this.eventSchliessen.emit({visible: this.schliessen})
+    this.toggleComponent();
 }
 
   render() {
-    return(  <div class="suchleiste-allgemein">
+    return(  <div class={this.searchbar ?  'allgemein' : 'suchleiste-allgemein'}>
                 <button class={this.toggle ? 'activated-lupe' : 'inactive'} onClick={() => this.toggleComponent()}> <img src="/assets/lupe.png" class="lupe-standart"/></button>
                 <div class={this.searchbar ? 'activated-searchbar' : 'inactive'} >
                 <form class="eingabefeld">
@@ -48,7 +45,7 @@ displaySchliessen() : void {
                         <option value="Spatz"/>
                         <option value="Specht"/>
                     </datalist>
-                    <button class={this.schliessen ? 'activated-schliessen' : 'inactive'} onClick={() => this.displaySchliessen()}><img src="/assets/schliessen.png" class="schliessen-standart"/></button>
+                    <button class='activated-schliessen' onClick={() => this.displaySchliessen()}><img src="/assets/schliessen.png" class="schliessen-standart"/></button>
                 </form>
                 </div>
              </div> );

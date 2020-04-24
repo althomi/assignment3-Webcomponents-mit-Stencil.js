@@ -214,7 +214,6 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface SearchmaskLarissa {
-        "onEventSchliessen"?: (event: CustomEvent<any>) => void;
         "onEventSearchbar"?: (event: CustomEvent<any>) => void;
         "onEventToggle"?: (event: CustomEvent<any>) => void;
     }
