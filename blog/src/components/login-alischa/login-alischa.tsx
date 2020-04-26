@@ -33,7 +33,7 @@ export class LoginAlischa {
 
   render(){
     return(
-      <div>
+      <div class="leere-div">
         <button-alischa class={this.click ? 'buttonOrig' : 'buttonOrig'} onClick={() => this.clickComponent()}>
         </button-alischa>
         <div class={this.click ? 'loginbox sb1' : 'buttonOrig'}>

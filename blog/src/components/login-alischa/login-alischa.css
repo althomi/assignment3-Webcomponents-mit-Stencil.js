@@ -1,3 +1,7 @@
+.leere-div{
+  width: 0px;
+  height: 0px;
+}
 .loginbox{
   height:310px;
   display: block;
@@ -64,7 +68,7 @@ vertical-align: center;
   display: block;
   position: relative;
   top: -690px;
-  right: -630px;
+  right: -1500px;
   width: 0px;
   margin: 0 auto;
 }
