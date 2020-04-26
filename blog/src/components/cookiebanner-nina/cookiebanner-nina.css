@@ -18,9 +18,16 @@
   z-index: 1000;
 }
 
+
 #footer-cookie a {
   color: #707070;
 }
+
+#footer-cookie:hover a:hover {
+    color: rgb(156, 156, 156);
+}
+
+
 
 #footer-cookie #description {
     font-family: Arial, Helvetica, sans-serif;
@@ -41,10 +48,20 @@
   padding: 7px 80px;
   text-decoration: none;
   background: #DEDEDE;
-
 }
 
+#footer-cookie:hover #accept a:hover {
+    background: #707070;
+    color: #DEDEDE;
+}
 
+.more {
+    color: #707070;
+}
+
+.more:hover {
+    color: rgb(165, 164, 164);
+}
 
 @media (max-width: 1200px) {
   #footer-cookie {

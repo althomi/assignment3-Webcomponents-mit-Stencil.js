@@ -7,6 +7,7 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class CookiebannerNina {
   @Prop() text: string;
+  @Prop() linktext: string;
   @Prop() link: string;
   @Prop() button: string;
 
@@ -16,17 +17,16 @@ export class CookiebannerNina {
     {
     name: 'cookiebanner-text',
     }, 
-
+    {
+    name: 'cookiebanner-link-text',
+    }, 
     {
     name: 'cookiebanner-link',
-    url: '',
-    imageUrl: ''
+    url: 'https://www.dhbw.de/startseite.html',
     }, 
-
     {
     name: 'cookiebanner-button',
-    url: '',
-    imageUrl: ''
+    url: 'https://www.dhbw.de/startseite.html',
     },
   ]
 
@@ -34,11 +34,13 @@ export class CookiebannerNina {
     return (
         <div id="footer-cookie">
             <span id="description">
-            {this.text} Wir haben Cookies auf deinem Computer platziert. Unsere Cookies werden verwendet, um Inhalte und Werbung zu personalisieren. <a href="https://dakitec.de/"><u>Mehr erfahren</u></a>
+                {this.text} 
+                {this.link}
+                <a href="https://www.dhbw.de/startseite.html"><u>{this.linktext}</u></a>                
             </span>
-            {this.link}
-            <span id="accept"><a href="#" title="Akzeptieren">OK</a></span>
-            {this.button}
+            <span id="accept">
+                <a href="https://www.dhbw.de/startseite.html" title="Akzeptieren">{this.button}</a>
+            </span>
         </div>
 
 

@@ -17,11 +17,9 @@ export class ArticleNina {
 
   public teaser: Array<any> = [
     {
-    name: 'article-image',
     url: '',
-    imageUrl: '/assets/article1.jpeg'
+    imageUrl: `../assets/${this.image}`
     }, 
-
     {
     name: 'article-brand',
     }, 
@@ -38,57 +36,57 @@ export class ArticleNina {
     name: 'article-date',
     },
     {
+    url:'',
     name: 'article-readmore',
     },   
     {
-    name: 'article-arrow',
-    url: '',
-    imageUrl: '/assets/articlearrow.png'
+    url:'',
+    imageUrl: `../assets/${this.arrow}`
     }, 
-
   ]
 
   render() {
     return (
         <div class="article">
-            <div class="article-card">
-                <div class="article-image">
-                    <img src="/assets/article1.jpeg" id="title-img" />{this.image}
-                </div>
+            <a href="https://www.dhbw.de/startseite.html">
+                <div class="article-card">
+                    <div class="article-image">
+                        <img src="/assets/article1.jpeg" id="title-img"/>{this.image}
+                    </div>
 
-                <div class="upper-article">
-                    <span class="first-row">
-                        <span class="article-brand">
-                            brandname{this.brandname}
+                    <div class="upper-article">
+                        <span class="first-row">
+                            <span class="article-brand">
+                                {this.brandname}
+                            </span>
+                            <span class="article-theme">
+                                {this.theme}
+                            </span>
                         </span>
-                        <span class="article-theme">
-                            lifestyle and beauty{this.theme}
-                        </span>
-                    </span>
-                </div>
+                    </div>
+                    <div class="article-headline">
+                        {this.headline}
+                    </div>
+                    <div class="article-text">
+                        {this.text}
+                    </div>
 
-                <div class="article-headline">
-                    Headline{this.headline}
-                </div>
-                <div class="article-text">
-                      {this.text}<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                </div>
-
-                <div class="under-article">
-                    <span class="last-row">
-                        <span class="article-date">
-                            24.2.12 {this.date}
+                    <div class="under-article">
+                        <span class="last-row">
+                            <span class="article-date">
+                                 {this.date}
+                            </span>
+                            <span class="article-readmore">
+                                <a class="more" href="https://www.dhbw.de/startseite.html"></a> {this.readmore}
+                            </span>
+                            <span class="article-arrow">
+                                <img src="/assets/articlearrow.png" id="arrow-img"/>
+                                {this.arrow}
+                            </span>
                         </span>
-                        <span class="article-readmore">
-                            More {this.readmore}
-                        </span>
-                        <span class="article-arrow">
-                            <img src="/assets/articlearrow.png" id="arrow-img"/>
-                             {this.arrow}
-                        </span>
-                    </span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
         </div>
 

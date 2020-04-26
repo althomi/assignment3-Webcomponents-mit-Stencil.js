@@ -25,6 +25,7 @@ export namespace Components {
     interface CookiebannerNina {
         "button": string;
         "link": string;
+        "linktext": string;
         "text": string;
     }
     interface FooterLarissa {
@@ -172,6 +173,7 @@ declare namespace LocalJSX {
     interface CookiebannerNina {
         "button"?: string;
         "link"?: string;
+        "linktext"?: string;
         "text"?: string;
     }
     interface FooterLarissa {
