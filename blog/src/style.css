@@ -1,3 +1,7 @@
 body{
     height: 50000px;
 }
+
+.article-card {
+    float: left;
+}

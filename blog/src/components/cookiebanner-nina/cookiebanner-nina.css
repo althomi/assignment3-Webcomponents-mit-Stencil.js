@@ -17,9 +17,16 @@
   color: #fff;
 }
 
+
 #footer-cookie a {
   color: #707070;
 }
+
+#footer-cookie:hover a:hover {
+    color: rgb(156, 156, 156);
+}
+
+
 
 #footer-cookie #description {
     font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +41,6 @@
   color: #505050;
   font-weight: lighter;
 }
-
 
 #footer-cookie #accept a {
   border: 1px solid #707070;
