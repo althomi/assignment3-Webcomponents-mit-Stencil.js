@@ -1,11 +1,21 @@
+.wrapper-außen {
+  min-height: 100%;
+  width: 2000px;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
 .footer-larissa{
     width: 75%;
     margin: auto;
+    margin-top: 50px;
     font-family: 'Oswald', sans-serif;
-    bottom: 0%;
+    bottom: 0px;
     position: fixed;
     left: 12.5%;
-    z-index: 100;
+
     background-color: #fff;
 }
 @media screen and (max-width: 750px) {

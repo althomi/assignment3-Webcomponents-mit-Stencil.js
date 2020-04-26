@@ -32,6 +32,7 @@ export class FooterLarissa {
 
   render() {
     return (
+        <div class="wrapper-außen">
         <div class="footer-larissa">
         <div id="trennlinie"></div>
         
@@ -46,6 +47,7 @@ export class FooterLarissa {
         <li class="footer-link"><a class="text-link" href={this.zweiterlink}>{this.zweiter}</a></li>
         <li class="footer-link"><a class="text-link" href={this.dritterlink}>{this.dritter}</a></li>
         </ul>
+        </div>
         </div>
         </div>
         </div>
