@@ -55,14 +55,13 @@ export class HeaderKatharina {
                                     </a>
                         </li>
                         <li class="right">
-                        <ul class="right burgermenu"> 
+                        {/* <ul class="right burgermenu"> 
                                 <li> <button class='burgerBtn' onClick={this.showMenuHandler.bind(this)}>
                                     <img class='burger-icon' src={getAssetPath(`../assets/${this.image2}`)} alt="Menu" />
                                     </button>
                                 </li>
-                            </ul>
+                            </ul> */}
                             <ul class="hrefs">
-                                <li><a href="#" ><searchmask-larissa></searchmask-larissa></a></li>
                                 <li><a href="#">{this.textone}</a></li>
                                 <li><a href="#">{this.texttwo}</a></li>
                                 <li><a href="#">{this.textthree}</a></li>
