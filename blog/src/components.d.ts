@@ -176,6 +176,7 @@ declare namespace LocalJSX {
         "button"?: string;
         "link"?: string;
         "linktext"?: string;
+        "onButtonSchliessen"?: (event: CustomEvent<any>) => void;
         "text"?: string;
     }
     interface FooterLarissa {
