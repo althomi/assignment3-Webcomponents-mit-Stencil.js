@@ -11,7 +11,7 @@ export namespace Components {
         "brandname": string;
         "date": string;
         "headline": string;
-        "image": "article1.jpeg";
+        "image": "placeholderstencil.png";
         "readmore": string;
         "text": string;
         "theme": string;
@@ -159,7 +159,7 @@ declare namespace LocalJSX {
         "brandname"?: string;
         "date"?: string;
         "headline"?: string;
-        "image"?: "article1.jpeg";
+        "image"?: "placeholderstencil.png";
         "readmore"?: string;
         "text"?: string;
         "theme"?: string;

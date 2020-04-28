@@ -6,7 +6,7 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: true
 })
 export class ArticleNina {
-  @Prop() image: "article1.jpeg";
+  @Prop() image: "placeholderstencil.png";
   @Prop() brandname: string;
   @Prop() theme: string;
   @Prop() headline: string;
@@ -51,7 +51,7 @@ export class ArticleNina {
             <a href="https://www.dhbw.de/startseite.html">
                 <div class="article-card">
                     <div class="article-image">
-                        <img src="/assets/article1.jpeg" id="title-img"/>{this.image}
+                        <img src="/assets/placeholderstencil.png" id="title-img"/>{this.image}
                     </div>
 
                     <div class="upper-article">
