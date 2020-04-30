@@ -24,10 +24,6 @@ displaySearchbar() : void {
     this.eventSearchbar.emit({visible: this.searchbar})
 }
 
-displaySchliessen() : void {
-    this.toggleComponent();
-}
-
   render() {
     return(  <div class={this.searchbar ?  'allgemein' : 'suchleiste-allgemein'}>
                 <button class={this.toggle ? 'activated-lupe' : 'inactive'} onClick={() => this.toggleComponent()}> <img src="/assets/lupe.png" class="lupe-standart"/></button>
@@ -45,7 +41,7 @@ displaySchliessen() : void {
                         <option value="Spatz"/>
                         <option value="Specht"/>
                     </datalist>
-                    <button class='activated-schliessen' onClick={() => this.displaySchliessen()}><img src="/assets/schliessen.png" class="schliessen-standart"/></button>
+                    <button class='activated-schliessen' onClick={() => this.toggleComponent()}><img src="/assets/schliessen.png" class="schliessen-standart"/></button>
                 </form>
                 </div>
              </div> );
