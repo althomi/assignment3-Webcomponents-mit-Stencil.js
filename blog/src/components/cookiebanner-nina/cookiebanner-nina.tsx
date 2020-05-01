@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, State, Event, EventEmitter, h } from '@stencil/core';
 
 @Component({
   tag: 'cookiebanner-nina',
@@ -10,6 +10,11 @@ export class CookiebannerNina {
   @Prop() linktext: string;
   @Prop() link: string;
   @Prop() button: string;
+
+  @State() schliessen : boolean = true;
+
+  @Event() buttonSchliessen : EventEmitter;
+
 
 
 
@@ -26,20 +31,26 @@ export class CookiebannerNina {
     }, 
     {
     name: 'cookiebanner-button',
-    url: 'https://www.dhbw.de/startseite.html',
     },
   ]
 
+  eventSchliessen() : void {
+    this.schliessen = !this.schliessen;
+    this.buttonSchliessen.emit({visible: this.schliessen})
+}
+
+
   render() {
     return (
-        <div id="footer-cookie">
+        <div id="footer-cookie" class={this.schliessen ? 'footer-cookie' : 'inactive'}>
+
             <span id="description">
                 {this.text} 
                 {this.link}
                 <a href="https://www.dhbw.de/startseite.html"><u>{this.linktext}</u></a>                
             </span>
             <span id="accept">
-                <a href="https://www.dhbw.de/startseite.html" title="Akzeptieren">{this.button}</a>
+                <button onClick={() => this.eventSchliessen()}>OK</button>
             </span>
         </div>
 
