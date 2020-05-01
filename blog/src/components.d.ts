@@ -38,9 +38,8 @@ export namespace Components {
     }
     interface HeaderKatharina {
         "burger": "Hamburger_icon.png";
-        "image1": string;
         "image2": string;
-        "logo": "default_logo.png";
+        "logo": string;
         "search": HTMLBodyElement;
         "textfive": string;
         "textfour": string;
@@ -185,9 +184,8 @@ declare namespace LocalJSX {
     }
     interface HeaderKatharina {
         "burger"?: "Hamburger_icon.png";
-        "image1"?: string;
         "image2"?: string;
-        "logo"?: "default_logo.png";
+        "logo"?: string;
         "search"?: HTMLBodyElement;
         "textfive"?: string;
         "textfour"?: string;
