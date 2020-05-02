@@ -6,7 +6,7 @@ import { Component, h, Prop, State, getAssetPath} from '@stencil/core';
 })
 
 export class HeaderKatharina {
-    @Prop() image1 = "default_logo.png";
+    @Prop() logo: string;
     @Prop() image2 = "Hamburger_icon.png";
     @Prop() textone: string;
     @Prop() texttwo: string;
@@ -14,7 +14,6 @@ export class HeaderKatharina {
     @Prop() textfour: string;
     @Prop() textfive: string;
     @Prop() search: HTMLBodyElement;
-    @Prop() logo: 'default_logo.png';
     @Prop() burger: 'Hamburger_icon.png';
 
     @State() showMenu = false;
@@ -51,7 +50,7 @@ export class HeaderKatharina {
                     <ul class="header-bar">
                         <li class="left">
                                     <a href="#" class="logo">
-                                        <img class='logo-image' src={getAssetPath(`../assets/${this.image1}`)} alt="Logo" />
+                                        <img class='logo-image' src={getAssetPath(`../assets/${this.logo}`)} alt="Logo" />
                                     </a>
                         </li>
                         <li class="right">
