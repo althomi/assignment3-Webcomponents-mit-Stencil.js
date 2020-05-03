@@ -36,7 +36,7 @@ export class LoginAlischa {
       <div class="leere-div">
         <button-alischa class={this.click ? 'buttonOrig' : 'buttonOrig'} onClick={() => this.clickComponent()}>
         </button-alischa>
-        <div class={this.click ? 'loginbox sb1' : 'buttonOrig'}>
+        <div class={this.click ? 'loginbox sb1' : 'hidden'}>
           <h1 class={this.click ? 'h1' : 'buttonOrig'}> {this.boxueberschrift} </h1>
             <form class={this.click ? 'input' : 'buttonOrig'}>
               <input type="email" placeholder='Email-Adresse'/>
