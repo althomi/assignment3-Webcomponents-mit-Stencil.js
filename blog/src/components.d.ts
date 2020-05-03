@@ -17,10 +17,8 @@ export namespace Components {
         "theme": string;
     }
     interface ButtonAlischa {
-        "link": string;
     }
     interface ButtonkundenkontoAlischa {
-        "link": string;
     }
     interface CookiebannerNina {
         "button": string;
@@ -160,11 +158,9 @@ declare namespace LocalJSX {
         "theme"?: string;
     }
     interface ButtonAlischa {
-        "link"?: string;
         "onOnClick"?: (event: CustomEvent<any>) => void;
     }
     interface ButtonkundenkontoAlischa {
-        "link"?: string;
         "onOnClick"?: (event: CustomEvent<any>) => void;
     }
     interface CookiebannerNina {
