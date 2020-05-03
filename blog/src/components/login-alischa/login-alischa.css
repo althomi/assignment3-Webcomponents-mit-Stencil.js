@@ -67,8 +67,8 @@ vertical-align: center;
 .buttonOrig{
   display: block;
   position: relative;
-  top: -648px;
-  right: -1560px;
+  top: 10%; /*-648px;*/
+  right: 25%; /*-1560px;*/
   width: 0px;
   margin: 0 auto;
 }
