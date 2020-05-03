@@ -12,7 +12,6 @@ export class ButtonAlischa {
   handleClick() {
     console.log("login click successful")}
 
-
   render() {
     return(
       <button onClick={() => this.handleClick()}>Login</button>
